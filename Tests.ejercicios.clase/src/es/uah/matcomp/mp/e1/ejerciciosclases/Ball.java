@@ -61,11 +61,11 @@ public class Ball {
     }
 
     public void reflectHorizontal() {
-        this.x = -this.xDelta;
+        this.xDelta = -this.xDelta;
     }
 
     public void reflectVertical() {
-        this.y = -this.yDelta;
+        this.yDelta = -this.yDelta;
     }
 
     public String toString() {
