@@ -34,6 +34,6 @@ class CircleTest {
     @Test
     void testToString() {
         Circle j = new Circle();
-        assertEquals("Circle[radius="+1.0+"]", j.toString(), "No funciona correctamente");
+        assertEquals("Circle[radius="+1.0+"]", j.toString(), "Se ha detectado un error.");
     }
 }
