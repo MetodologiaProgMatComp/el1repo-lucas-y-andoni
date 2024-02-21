@@ -36,21 +36,75 @@ public class Time {
     }
 
     public void setTime(int newHour, int newMinute, int newSecond) {
-        this.hour = newMinute;
+        this.hour = newHour;
         this.minute = newMinute;
         this.second = newSecond;
     }
 
     public String toString() {
-        return this.hour + ":" + this.minute + ":" + this.second;
+        String newHour;
+        String newMinute;
+        String newSecond;
+        if (this.hour <= 9)
+            newHour = "0" + String.valueOf(this.hour);
+        else {
+            newHour = String.valueOf(this.hour);
+        }
+        if (this.minute <= 9) {
+            newMinute = "0" + String.valueOf(this.minute);
+        } else {
+            newMinute = String.valueOf(this.minute);
+        }
+        if (this.second <= 9) {
+            newSecond = "0" + String.valueOf(this.second);
+        } else {
+            newSecond = String.valueOf(this.second);
+        }
+        return newHour + ":" + newMinute + ":" + newSecond;
     }
 
     public Time nextSecond() {
-        return null;
+        if (this.second <= 58) {
+            this.second += 1;
+        }
+        else {
+            this.second -= 59;
+            if (this.minute <= 58) {
+                this.minute += 1;
+            }
+            else {
+                this.minute -= 59;
+                if (this.hour <= 22) {
+                    this.hour += 1;
+                }
+                else {
+                    this.hour -= 23;
+                }
+            }
+
+        }
+        return this;
     }
 
     public Time previousSecond() {
-        return null;
+        if (this.second >= 1) {
+            this.second -= 1;
+        }
+        else {
+            this.second += 59;
+            if (this.minute >= 1) {
+                this.minute -= 1;
+            }
+            else {
+                this.minute += 59;
+                if (this.hour >= 1) {
+                    this.hour -= 1;
+                }
+                else {
+                    this.hour += 23;
+                }
+            }
+        }
+        return this;
     }
-
 }
