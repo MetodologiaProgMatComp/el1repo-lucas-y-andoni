@@ -42,6 +42,20 @@ public class Date {
     }
 
     public String toString() {
-        return this.day + "/" + this.month + "/" + this.year;
+        String newDay;
+        String newMonth;
+        if(this.day<= 9) {
+            newDay= "0"+String.valueOf(this.day);
+        }
+        else {
+            newDay=String.valueOf(this.day);
+        }
+        if(this.month<= 9) {
+            newMonth= "0"+String.valueOf(this.month);
+        }
+        else{
+            newMonth= String.valueOf(this.month);
+        }
+        return newDay + "/" + newMonth + "/" + this.year;
     }
 }
