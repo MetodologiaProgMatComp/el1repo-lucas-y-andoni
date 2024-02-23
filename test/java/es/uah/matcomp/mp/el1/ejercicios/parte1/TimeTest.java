@@ -1,5 +1,6 @@
-package es.uah.matcomp.mp.el1.ejercicios;
+package es.uah.matcomp.mp.el1.ejercicios.parte1;
 
+import es.uah.matcomp.mp.el1.ejercicios.parte1.Time;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

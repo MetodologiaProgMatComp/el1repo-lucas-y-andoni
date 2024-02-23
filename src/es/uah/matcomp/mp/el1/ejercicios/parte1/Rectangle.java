@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.el1.ejercicios;
+package es.uah.matcomp.mp.el1.ejercicios.parte1;
 
 public class Rectangle {
     private float length;

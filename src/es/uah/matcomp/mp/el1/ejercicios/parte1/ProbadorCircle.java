@@ -1,6 +1,4 @@
-package es.uah.matcomp.mp.el1.ejercicios;
-
-import es.uah.matcomp.mp.el1.ejercicios.Circle;
+package es.uah.matcomp.mp.el1.ejercicios.parte1;
 
 public class ProbadorCircle {
     public static void main(String[] args) {
