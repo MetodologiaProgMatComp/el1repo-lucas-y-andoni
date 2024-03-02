@@ -19,7 +19,19 @@ public class Cylinder extends Circle {
     public double getHeight() {
         return height;
     }
+    public void setHeight(double newHeight) {
+        height = newHeight;
+    }
     public double getVolume() {
-        return getArea()*height;
+        return super.getArea()*height;
+    }
+    @Override
+    public double getArea() {
+        return Math.PI*2*getRadius()*getHeight() + 2*super.getArea();
+    }
+    @Override
+    public String toString() {
+        return "Cylinder: subclass of " + super.toString()
+                + " height=" + height;
     }
 }

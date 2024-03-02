@@ -23,5 +23,7 @@ public class CylinderCodigo {
                 + " height=" + c3.getHeight()
                 + " base area=" + c3.getArea()
                 + " volume=" + c3.getVolume());
+        Cylinder c4 = new Cylinder(1,2);
+        System.out.println("El area del ciliedro c4 es:" + c4.getArea());
     }
 }
