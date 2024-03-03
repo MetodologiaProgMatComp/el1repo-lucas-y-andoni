@@ -1,7 +1,7 @@
-package es.uah.matcomp.mp.el1.ejercicios.parte2;
+package es.uah.matcomp.mp.e1.ejerciciosclases.src.es.uah.matcomp.mp.el1.ejercicios.parte2;
 
 public class AuthorCodigo {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Author ahTeck = new Author("Tan Ah Teck", "ahteck@nowhere.com", 'm'); // Test the constructor
         System.out.println(ahTeck); // Test toString()
         ahTeck.setEmail("paulTan@nowhere.com"); // Test setter
