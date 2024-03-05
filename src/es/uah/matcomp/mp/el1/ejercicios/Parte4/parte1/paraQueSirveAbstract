@@ -1,0 +1,13 @@
+Las clases abstractas sirven para hacer una globalización
+de diferentes clases (como puede ser la clase Animal)
+la cual no tiene sentido instanciar ya que no podemos crear "un animal",
+pero si que podemos instanciar las diferentes clases que extienden Animal
+como pajaro, gato...
+
+La clase abstracta tendrá una serie de atributos que todas las clases que
+la extienden tendrán, asi no tienes que ponerlo todo el rato
+
+Los metodos abstractos son metodos que todas las clases que hereden la clase abstracta
+tendrán que tener necesariamente (en clase de animal, por ejemplo, forma de comunicarse(ladrido,
+aullido...)) y sirve para tener controlado que en cada clase se necesita esta funcióm
+(se implementan con @override)
